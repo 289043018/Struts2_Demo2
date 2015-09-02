@@ -27,13 +27,11 @@
   		localhost：8080/项目名/new/login.do
   	-->
   		<action name="login" class="com.hand.action.LoginAction">
-  			<result name="success">/success.jsp</result>
-  			<result name="fail">/fail.jsp</result>
+  			<result name="success" type="redirect">/success.jsp</result>
+  			 <result name="fail" type="dispatcher">/fail.jsp</result> 
   		</action>
   	</package>
   		
 	<!--   	include标签用于引入其他的xml配置文件 -->
 
-  
-	
 </struts>
